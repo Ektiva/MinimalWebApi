@@ -22,6 +22,6 @@ jobs:
         # SDK version to use. Examples: 2.2.104, 3.1, 3.1.x
         dotnet-version: 3.1
     - name: Build
-      run: dotnet build src/MinimalWebApi.csproj --no-restore
+      run: dotnet build src/MinimalWebApi/MinimalWebApi.csproj --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
